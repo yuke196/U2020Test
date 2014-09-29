@@ -15,8 +15,7 @@ public class MainActivity extends Activity {
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
-    U2020App app = U2020App.get(this);
-    app.inject(this);
+    U2020App.get(this).inject(this);//inject self
 
     container = appContainer.get(this);
 
